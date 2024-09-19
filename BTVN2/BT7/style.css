@@ -1,0 +1,26 @@
+.container{
+    align-items: center;
+    text-align: center;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.ZnmmR9CkjXlyThOYhh0qqAHaEK&pid=Api&P=0&h=220') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    width: 700px;
+    height: 300px;
+    color: #fff;
+    opacity: ;
+    
+}
+.container button{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container div{
+    padding-top: 25px;
+    
+    
+}
+

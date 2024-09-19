@@ -1,0 +1,36 @@
+.container{
+    box-sizing: border-box;
+    width: auto;
+    height: 32px;
+    background-color: black;
+
+}
+
+
+
+
+.container ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5px 0 0 0;
+            display: flex;
+
+        }
+
+.container ul li{
+    padding: 0px 10px;
+}
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    display: block;
+    font-size: 12px;
+}
+.container ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+

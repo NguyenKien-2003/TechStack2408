@@ -1,0 +1,12 @@
+h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    
+  }
+.box{
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}  

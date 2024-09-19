@@ -1,0 +1,17 @@
+.table th{
+    background-color: cadetblue;
+    color: brown;
+    
+    
+}
+.table td{
+    background-color: aliceblue;
+    
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+.table{
+    width: 900px;
+}

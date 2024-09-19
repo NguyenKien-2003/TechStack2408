@@ -1,0 +1,400 @@
+.logo {
+    font-family: "Peralta", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    size: 24px;
+    line-height: 36px;
+    padding: 0 10px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: black;
+     position: fixed;
+     height: 40px;
+    
+}
+.avatar {
+    width: 40px;
+    height: 40px; 
+    background-image: url("./avatar.png");
+    border-radius: 50%;
+    border: 1px solid #a6c594;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    margin-left: -300px; /* Ẩn menu ở ngoài màn hình */
+    background-color: #fff;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: right 0.3s ease;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+/* Khi checkbox được chọn, menu sẽ xuất hiện */
+.nav-toggle:checked + nav .nav-links {
+    left: 250px;
+}
+
+.nav-toggle:checked + nav + .burger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+    position: relative;
+}
+
+.nav-toggle:checked + nav + .burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle:checked + nav + .burger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -8px;
+    position: relative;
+}
+
+.search-container {
+    position: relative;
+    width: 471px;
+    height: 40px;
+    
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 30px; /* Padding on left for the icon */
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    
+ 
+
+
+
+}
+
+.search-container input::placeholder {
+    color: #aaa;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #aaa;
+}
+.menu{
+    display: flex;
+    
+}
+.list{
+    display: flex;
+    align-items: center;
+    
+}
+.burger{
+    padding-top: 8px;
+}
+.list i{
+    margin-right: 20px;
+}
+.card-user {
+    width: 477px;
+    height: 296px;
+    background: #FFD38A;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    margin: 12px;
+}
+
+.card-user-left {
+    height: calc(100% - 32px);
+    background: #E2E2E2;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons-contact svg {
+    margin-right: 12px;
+}
+
+.icons-contact-right svg {
+    margin-right: 12px;
+}
+
+.card-user-right {
+    height: calc(100% - 32px - 16px);
+    padding: 32px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1.card-user-name {
+    font-size: 36px;
+}
+
+h3.card-user-job {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.card-user-location {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+p.card-user-location__detail {
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+p.card-user-speaks {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.breadcrumb h1 {
+    margin-left: 20px;
+}
+
+.content {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-user.user-2{
+    background-color: #ABE1FF;
+}
+
+.card-user.user-3{
+    background-color: #D6E7FF;
+}
+
+.card-user.user-4{
+    background-color: #ADFFE6;
+}
+
+.card-user.user-5{
+    background-color: #FFC5A0;
+}
+
+.card-user.user-6{
+    background-color: #A5FF96;
+}
+
+.card-user-social-left{
+    display: none;
+}
+
+.icons-contact-right{
+    display: none;
+}
+
+.header-search {
+    position: relative;
+}
+
+span.icon-search {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.header-search input {
+    padding-left: 40px;
+}
+
+@media (max-width: 1024px){
+    .user-3{
+        order: 2;
+    }
+
+    .user-4{
+        order: 5;
+    }
+
+    .user-5{
+        order: 3;
+    }
+
+    .user-2{
+        order: 4;
+    }
+
+    .user-6{
+        order: 6;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px){
+    .header-search{
+        text-align: center;
+        width: 30%;
+    }
+
+    p.card-user-speaks{
+        display: none;
+    }
+
+    .card-user-location{
+        display: none;
+    }
+
+    .card-user-social-left{
+        display: flex;
+    }
+    
+    .icons-contact-right{
+        display: flex;
+    }
+
+    .card-user-social{
+        display: none;
+    }
+    
+    .icons-contact{
+        display: none;
+    }
+
+    .card-user {
+        width: 328px;
+    }
+
+    .card-user-left{
+        padding: 16px 8px;
+    }
+
+    .card-user-left img{
+        width: 168px;
+    }
+
+    .card-user-right{
+        padding: 16px;
+    }
+}
+
+@media (max-width: 719px){
+    .card-user{
+        width: 100%;
+    }
+
+    .header-search{
+        display: none;
+    }
+
+    .header-options{
+        display: none;
+    }
+}
+
+@media (max-width: 509px){
+    p.card-user-speaks{
+        display: none;
+    }
+
+    .card-user-location{
+        display: none;
+    }
+
+    .card-user-social-left{
+        display: flex;
+    }
+    
+    .icons-contact-right{
+        display: flex;
+    }
+
+    .card-user-social{
+        display: none;
+    }
+    
+    .icons-contact{
+        display: none;
+    }
+
+    .card-user-left{
+        padding: 16px 8px;
+    }
+
+    .card-user-left img{
+        width: 168px;
+    }
+
+    .card-user-right{
+        padding: 16px;
+    }
+}
+h1.header-logo__name {
+    margin-left: 24px;
+}

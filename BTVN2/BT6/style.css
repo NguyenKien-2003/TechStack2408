@@ -1,0 +1,55 @@
+.center{
+    display: flex;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto; /* Căn giữa phần tử theo chiều ngang */
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */ 
+    align-items: center;  
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;     
+          
+    
+}
+.multi-color-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    
+}
+
+
+.multi-color-title .blue {
+    color:cornflowerblue;
+    font-weight: 700;
+
+}
+.text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-group {
+    text-align: center;
+    
+  
+    
+    
+}   
+.button-group button{
+    background-color: black;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+
+
+
+
+    

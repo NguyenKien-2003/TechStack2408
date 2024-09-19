@@ -1,0 +1,18 @@
+.container {
+    box-sizing: border-box;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:20px;
+}
+.avt{
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(162, 160, 160);
+    border-radius: 50%;
+    margin-left: 80px;
+    background-image: url(https://up.yimg.com/ib/th?id=OIP.h__DONCPzbzgY3xmArSFagHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121);
+}

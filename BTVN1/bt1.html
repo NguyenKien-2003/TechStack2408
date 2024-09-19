@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form đăng ký</h1>
+    <form action="/BTVN1/bt1.html" method="post">
+        <label for="name">Họ tên: </label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Mật khẩu: </label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label>Giới tính: </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Nữ</label><br><br>
+
+        <label>Sở thích: </label>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Đọc sách</label>
+        <input type="checkbox" id="travel" name="hobby" value="travel">
+        <label for="travel">Du lịch</label><br><br>
+
+        <input type="submit" value="Gửi">
+
+    </form>
+</body>
+</html>

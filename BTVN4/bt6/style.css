@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+
+}
+/* Toàn bộ màn hình */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+/* Nội dung chính và sidebar */
+.main {
+    display: flex;
+    flex: 1; /* Chiếm không gian còn lại giữa header và footer */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #d9d4d4;
+    color: black;
+    padding: 20px;
+    width: 250px;
+    flex-shrink: 0; /* Giữ sidebar không co lại */
+}
+
+/* Nội dung chính */
+.content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex: 1; /* Chiếm tất cả không gian còn lại */
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Đáp ứng cho thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

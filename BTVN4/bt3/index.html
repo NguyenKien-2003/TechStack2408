@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài tập 3</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			.container {
+				display: flex;
+				background: #333;
+				padding: 8px;
+			}
+			.page {
+				width: 25%;
+				text-align: center;
+				color: #fff;
+				padding: 6px;
+				cursor: pointer;
+			}
+			.page.active {
+				background: #555;
+			}
+			.page:hover {
+				background: #555;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page active">Home</div>
+			<div class="page">About</div>
+			<div class="page">Service</div>
+			<div class="page">Contact</div>
+		</div>
+	</body>
+</html>
